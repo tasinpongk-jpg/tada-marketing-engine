@@ -1,0 +1,58 @@
+name: Daily Marketing Sweep
+
+# Daily competitor intelligence + dashboard publish:
+#   1. @scout sweeps Grab/LINE MAN/Bolt/inDrive (news, promo-page diffs,
+#      app radar, review pain points) -> reports/intel-YYYY-MM-DD.md
+#   2. reports/ + watch/ snapshots are committed back (page_watch and
+#      app_radar diff against the previous run, so history must persist)
+#   3. publish.py deploys the dashboard worker with the fresh content
+#
+# Schedule: 01:00 UTC = 08:00 Bangkok, daily.
+# Secrets required: GROQ_API_KEY, CLOUDFLARE_API_TOKEN.
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45   # free-tier rate-limit waits can stretch a sweep
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scout sweep
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PYTHONUTF8: '1'
+        run: |
+          python3 -u marketing.py @scout "Daily sweep: Grab, LINE MAN, Bolt \
+          and inDrive — news_feed each, page_watch every watchlist URL, \
+          app_radar each package id, play_reviews for Grab and LINE MAN. \
+          Compare to the previous intel brief in reports if one exists and \
+          lead with what changed. Save the brief as intel-$(date +%F).md."
+
+      - name: Commit reports and watch snapshots
+        run: |
+          git config user.name "marketing-bot"
+          git config user.email "actions@github.com"
+          git add reports/ watch/
+          git diff --cached --quiet || git commit -m "daily sweep $(date +%F)"
+          git pull --rebase origin main && git push
+
+      - name: Publish dashboard
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python3 publish.py
