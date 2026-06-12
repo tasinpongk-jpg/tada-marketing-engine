@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tada Marketing Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #0e1117; --panel: #161b24; --panel2: #1c2330; --line: #2a3344;
+    --text: #e6e9ef; --dim: #8b95a7; --accent: #2dd4bf; --accent2: #f59e0b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--line);
+           display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  header h1 { font-size: 18px; margin: 0; }
+  header h1 span { color: var(--accent); }
+  header .stamp { color: var(--dim); font-size: 12.5px; }
+  .layout { display: grid; grid-template-columns: 320px 1fr; min-height: calc(100vh - 60px); }
+  nav { border-right: 1px solid var(--line); padding: 16px; overflow-y: auto; }
+  nav h2 { font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+           color: var(--dim); margin: 18px 6px 8px; }
+  nav h2:first-child { margin-top: 4px; }
+  .card { display: block; width: 100%; text-align: left; background: var(--panel);
+          border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+          margin-bottom: 6px; color: var(--text); cursor: pointer; font: inherit; }
+  .card:hover { border-color: var(--accent); }
+  .card.active { border-color: var(--accent); background: var(--panel2); }
+  .card .t { font-size: 13.5px; font-weight: 600; }
+  .card .d { font-size: 11.5px; color: var(--dim); margin-top: 2px; }
+  .badge { display: inline-block; font-size: 10px; padding: 1px 7px;
+           border-radius: 99px; margin-right: 6px; vertical-align: 1px; }
+  .b-intel { background: #11403a; color: #5eead4; }
+  .b-copy { background: #432f10; color: #fcd34d; }
+  .b-calendar { background: #1e3a5f; color: #93c5fd; }
+  .b-ads { background: #3f1d2e; color: #f9a8d4; }
+  .b-brand { background: #2e2a3f; color: #c4b5fd; }
+  .b-other { background: #2a3344; color: #aab4c8; }
+  main { padding: 26px 36px; overflow-y: auto; max-width: 980px; }
+  main .placeholder { color: var(--dim); margin-top: 80px; text-align: center; }
+  article h1, article h2, article h3 { line-height: 1.3; }
+  article h1 { font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+  article h2 { font-size: 19px; margin-top: 28px; color: var(--accent); }
+  article h3 { font-size: 16px; }
+  article a { color: var(--accent); }
+  article code { background: var(--panel2); padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+  article pre { background: var(--panel2); border: 1px solid var(--line);
+                padding: 12px; border-radius: 8px; overflow-x: auto; }
+  article blockquote { border-left: 3px solid var(--accent2); margin-left: 0;
+                       padding-left: 14px; color: var(--dim); }
+  article table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  article th, article td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; }
+  article th { background: var(--panel2); }
+  article tr:nth-child(even) td { background: var(--panel); }
+  .draftnote { background: #432f10; color: #fcd34d; border-radius: 8px;
+               padding: 8px 14px; font-size: 12.5px; margin-bottom: 18px; }
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: 1fr; }
+    nav { border-right: none; border-bottom: 1px solid var(--line); }
+    main { padding: 18px; }
+  }
+  /* chat dock */
+  #chatBtn { position: fixed; right: 22px; bottom: 22px; z-index: 50;
+             background: var(--accent); color: #06302b; border: none;
+             border-radius: 99px; padding: 12px 18px; font: 600 14px/1 inherit;
+             cursor: pointer; box-shadow: 0 4px 18px rgba(0,0,0,.45); }
+  #chatPanel { position: fixed; right: 22px; bottom: 74px; z-index: 50;
+               width: min(420px, calc(100vw - 44px)); height: min(560px, 75vh);
+               background: var(--panel); border: 1px solid var(--line);
+               border-radius: 12px; display: none; flex-direction: column;
+               box-shadow: 0 8px 30px rgba(0,0,0,.5); }
+  #chatPanel.open { display: flex; }
+  #chatPanel .head { padding: 10px 14px; border-bottom: 1px solid var(--line);
+                     font-size: 13px; font-weight: 600; }
+  #chatPanel .head span { color: var(--accent); }
+  #chatLog { flex: 1; overflow-y: auto; padding: 12px; font-size: 13.5px; }
+  .msg { margin-bottom: 10px; white-space: pre-wrap; }
+  .msg.user { color: var(--accent2); }
+  .msg.bot { color: var(--text); }
+  .msg.sys { color: var(--dim); font-style: italic; }
+  #chatForm { display: flex; gap: 8px; padding: 10px; border-top: 1px solid var(--line); }
+  #chatInput { flex: 1; background: var(--panel2); color: var(--text);
+               border: 1px solid var(--line); border-radius: 8px;
+               padding: 9px 11px; font: inherit; font-size: 13.5px; }
+  #chatForm button { background: var(--accent); color: #06302b; border: none;
+                     border-radius: 8px; padding: 0 16px; font: 600 13px inherit;
+                     cursor: pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span>Tada</span> Marketing Dashboard</h1>
+  <div class="stamp" id="stamp">loading…</div>
+</header>
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"><div class="placeholder">Select a report</div></main>
+</div>
+<script>
+const KINDS = [
+  ["intel-",      "intel",    "Competitor Intel"],
+  ["copy-",       "copy",     "Copy Drafts"],
+  ["calendar-",   "calendar", "Calendars"],
+  ["ads-report-", "ads",      "Ad Reports"],
+];
+const kindOf = f => (KINDS.find(([p]) => f.startsWith(p)) || [,"other"])[1];
+
+async function boot() {
+  const res = await fetch("content/manifest.json");
+  const m = await res.json();
+  document.getElementById("stamp").textContent = "published " + m.generated;
+  const nav = document.getElementById("nav");
+
+  const groups = {};
+  for (const r of m.reports) (groups[kindOf(r.file)] ||= []).push(r);
+  const order = [...KINDS.map(k => k[1]), "other"];
+  for (const kind of order) {
+    if (!groups[kind]) continue;
+    const title = (KINDS.find(k => k[1] === kind) || [,, "Other Reports"])[2];
+    nav.insertAdjacentHTML("beforeend", `<h2>${title}</h2>`);
+    for (const r of groups[kind].sort((a, b) => b.modified.localeCompare(a.modified)))
+      addCard(nav, r, kind, "reports");
+  }
+  nav.insertAdjacentHTML("beforeend", "<h2>Brand Assets</h2>");
+  for (const r of m.brand) addCard(nav, r, "brand", "brand");
+
+  const first = m.reports[0] || m.brand[0];
+  if (first) nav.querySelector(".card")?.click();
+}
+
+function addCard(nav, r, kind, dir) {
+  const btn = document.createElement("button");
+  btn.className = "card";
+  btn.innerHTML = `<div class="t"><span class="badge b-${kind}">${kind}</span>${esc(r.title)}</div>
+                   <div class="d">${esc(r.file)} · ${r.modified}</div>`;
+  btn.onclick = () => show(btn, dir + "/" + r.file, kind);
+  nav.appendChild(btn);
+}
+
+async function show(btn, path, kind) {
+  document.querySelectorAll(".card").forEach(c => c.classList.remove("active"));
+  btn.classList.add("active");
+  const md = await (await fetch("content/" + path)).text();
+  const note = kind === "copy"
+    ? `<div class="draftnote">DRAFT — human review + (for LINE) policy check required before publishing.</div>` : "";
+  document.getElementById("main").innerHTML = note + "<article>" + marked.parse(md) + "</article>";
+  document.getElementById("main").scrollTop = 0;
+}
+
+const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+boot().catch(e => document.getElementById("main").innerHTML =
+  `<div class="placeholder">No content published yet — run publish.py (${esc(String(e))})</div>`);
+
+// ---- chat dock (token-gated, grounded in the published content) ----
+const thread = [];
+function addMsg(cls, text) {
+  const log = document.getElementById("chatLog");
+  log.insertAdjacentHTML("beforeend", `<div class="msg ${cls}">${esc(text)}</div>`);
+  log.scrollTop = log.scrollHeight;
+  return log.lastElementChild;
+}
+function token() {
+  let t = localStorage.getItem("mkt_chat_token");
+  if (!t) {
+    t = prompt("Chat access token:") || "";
+    if (t) localStorage.setItem("mkt_chat_token", t.trim());
+  }
+  return (t || "").trim();
+}
+document.getElementById("chatBtn").onclick = () => {
+  document.getElementById("chatPanel").classList.toggle("open");
+  document.getElementById("chatInput").focus();
+};
+document.getElementById("chatForm").onsubmit = async (ev) => {
+  ev.preventDefault();
+  const input = document.getElementById("chatInput");
+  const q = input.value.trim();
+  if (!q) return;
+  const t = token();
+  if (!t) { addMsg("sys", "token required"); return; }
+  input.value = "";
+  addMsg("user", q);
+  thread.push({ role: "user", content: q });
+  const wait = addMsg("sys", "reading the brand and reports…");
+  try {
+    const r = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + t },
+      body: JSON.stringify({ messages: thread }),
+    });
+    const d = await r.json();
+    wait.remove();
+    if (!r.ok) {
+      if (r.status === 401) localStorage.removeItem("mkt_chat_token");
+      addMsg("sys", d.error || `error ${r.status}`);
+      return;
+    }
+    addMsg("bot", d.reply);
+    thread.push({ role: "assistant", content: d.reply });
+  } catch (e) {
+    wait.remove();
+    addMsg("sys", "network error: " + e.message);
+  }
+};
+</script>
+<button id="chatBtn" type="button">✦ Ask the brand</button>
+<div id="chatPanel">
+  <div class="head"><span>Tada</span> marketing assistant — answers from the published brand + reports</div>
+  <div id="chatLog"><div class="msg sys">Ask about the brand voice, competitors, or any report on this page. Drafts it produces need human review.</div></div>
+  <form id="chatForm">
+    <input id="chatInput" placeholder="e.g. What pain points did Grab reviews show?" autocomplete="off">
+    <button type="submit">Send</button>
+  </form>
+</div>
+</body>
+</html>

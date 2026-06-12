@@ -1,0 +1,6 @@
+# reports/ and watch/ ARE committed — CI diffs trends against history
+__pycache__/
+.env
+reports/weekly.log
+dashboard/public/content/
+.DS_Store

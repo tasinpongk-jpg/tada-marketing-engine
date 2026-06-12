@@ -1,0 +1,19 @@
+{
+  // Cloudflare Workers deploy for the Tada marketing dashboard.
+  // Serves public/ (index.html + content/ synced from ../reports and
+  // ../brand by ../publish.py) plus one server route: POST /api/chat —
+  // Workers AI assistant grounded in the published content, token-gated
+  // via the CHAT_TOKEN worker secret. Same pattern as is1-coverage-dashboard.
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "tada-marketing-dashboard",
+  "main": "worker.js",
+  "compatibility_date": "2026-06-12",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "ai": {
+    "binding": "AI"
+  }
+}
