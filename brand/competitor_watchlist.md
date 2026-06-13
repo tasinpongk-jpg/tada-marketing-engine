@@ -1,7 +1,7 @@
 # Competitor Watchlist — Thailand Ride-Hailing
 
 Market context: Thailand ride-hailing ≈ USD 2.6B (2025) → 4.38B (2031),
-Bangkok holds ~55%. 11 DLT-licensed apps. Tada = emerging challenger.
+Bangkok holds ~55%. 11 DLT-licensed apps. TADA = emerging challenger.
 
 ## Grab (dominant leader)
 - Commission ~25–30%. Multi-service super-app.
@@ -25,7 +25,7 @@ Bangkok holds ~55%. 11 DLT-licensed apps. Tada = emerging challenger.
 ## inDrive (niche)
 - Fare-negotiation model, driver-friendly messaging — closest narrative rival.
 - Play package id: sinet.startup.inDriver
-- Counter-angle: negotiation friction vs Tada's simple flat THB 20 fee.
+- Counter-angle: negotiation friction vs TADA's simple flat THB 20 fee.
 
 ## Nine signal types to monitor weekly
 launches, pricing, messaging shifts, new features, hiring signals,

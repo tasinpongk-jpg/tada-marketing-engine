@@ -6,7 +6,7 @@ and load them into LINE OA broadcast/auto-reply.
 
 ## Message 1 — Welcome (immediately on follow)
 - Goal: warm welcome + plant the fairness story.
-- Content: thanks for adding, one line on what Tada is (เรียกรถ จ่ายแค่
+- Content: thanks for adding, one line on what TADA is (เรียกรถ จ่ายแค่
   ค่าบริการ 20 บาท ไม่หักค่าคอมจากคนขับ), one-tap CTA to book first ride.
 - Tone: สนุก, friendly, 1–2 emoji. Max 3 lines.
 

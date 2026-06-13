@@ -1,5 +1,5 @@
 /**
- * Tada marketing dashboard worker.
+ * TADA marketing dashboard worker.
  *
  * Static assets served by the assets pipeline; one API route:
  *
@@ -82,8 +82,8 @@ async function handleChat(request, env, origin) {
   if (!history.length) return json({ error: "no messages" }, 400);
 
   const system =
-    "You are the marketing assistant on the Tada Thailand marketing " +
-    "dashboard. Tada is the zero-commission ride-hailing challenger in " +
+    "You are the marketing assistant on the TADA Thailand marketing " +
+    "dashboard. TADA is the zero-commission ride-hailing challenger in " +
     "Bangkok (THB 20 flat fee, 0% driver commission) competing with Grab, " +
     "LINE MAN, Bolt and inDrive. Answer ONLY from the brand assets and " +
     "reports below — if the answer is not in them, say so plainly. Never " +

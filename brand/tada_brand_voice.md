@@ -1,7 +1,7 @@
-# Tada Thailand — Brand Voice Guide
+# TADA Thailand — Brand Voice Guide
 
 ## Who we are
-Tada is the zero-commission ride-hailing platform, launched in Bangkok
+TADA is the zero-commission ride-hailing platform, launched in Bangkok
 February 2024. Drivers keep 100% of the fare — we charge only the
 government-regulated THB 20 booking fee. ~15,000 registered drivers
 (partnership with Howa International). Backed by MVLLABS Group.
@@ -31,7 +31,7 @@ government-regulated THB 20 booking fee. ~15,000 registered drivers
 ## Rules
 - Never claim market leadership; we are the challenger.
 - Always quantify the commission gap when targeting drivers
-  (e.g. on THB 30,000/month gross, Grab takes ~THB 7,500–9,000; Tada takes 0).
+  (e.g. on THB 30,000/month gross, Grab takes ~THB 7,500–9,000; TADA takes 0).
 - Every LINE broadcast: ≤3 lines, 1 emoji minimum, strong CTA to open app.
 - Facebook ads: ≤80 words, hook in first line.
 - Never invent statistics or savings percentages. The only numbers allowed

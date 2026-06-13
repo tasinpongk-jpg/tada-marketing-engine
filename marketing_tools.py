@@ -215,6 +215,14 @@ def app_radar(package_id: str) -> str:
     out["checked"] = datetime.now().strftime("%Y-%m-%d")
     hist.parent.mkdir(parents=True, exist_ok=True)
     hist.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+    # append-only metric history — fuel for future trend charts
+    row = {"date": out["checked"], "package_id": package_id,
+           "play_rating": (out.get("play") or {}).get("rating"),
+           "play_reviews": (out.get("play") or {}).get("review_count"),
+           "ios_rating": (out.get("ios") or {}).get("rating"),
+           "ios_version": (out.get("ios") or {}).get("version")}
+    with (WATCH_DIR / "apps" / "history.jsonl").open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
     return json.dumps(out, ensure_ascii=False)
 
 

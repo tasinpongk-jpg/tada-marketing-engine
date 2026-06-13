@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tada Thailand digital marketing engine — built on the hybrid AI Agent.
+"""TADA Thailand digital marketing engine — built on the hybrid AI Agent.
 
 Reuses ../AI Agent/agent.py (backends, tool loop, named agents) and adds
 marketing tools + agents on top. Same backend rules apply: GROQ_API_KEY ->
@@ -35,7 +35,7 @@ agent.NOTES_DIR = HERE / "reports"  # save_note/read_note land in reports/
 agent.AGENT_NAME = "marketing"
 
 agent.SYSTEM = (
-    "You are the digital marketing engine for Tada Thailand, the zero-commission "
+    "You are the digital marketing engine for TADA Thailand, the zero-commission "
     "ride-hailing challenger in Bangkok competing against Grab, LINE MAN, Bolt "
     "and inDrive. You support a small marketing team with competitive "
     "intelligence, bilingual Thai/English content, content calendars, and ad "
@@ -48,7 +48,7 @@ agent.SYSTEM = (
     "play_reviews for sentiment (package ids are in the watchlist). "
     "For ad analysis, read_csv "
     "loads exports from data/.\n"
-    "Tada's core story: 0% driver commission (vs Grab ~25-30%, LINE MAN ~10%), "
+    "TADA's core story: 0% driver commission (vs Grab ~25-30%, LINE MAN ~10%), "
     "fairness and driver welfare. Compete on narrative and agility, never on "
     "promo budget.\n"
     "Thai copy must be casual, friendly ภาษาพูด — not formal Thai. AI output is "

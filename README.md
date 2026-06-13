@@ -1,10 +1,10 @@
-# Tada Thailand — Digital Marketing Engine
+# TADA Thailand — Digital Marketing Engine
 
 Working implementation of the playbook in
 `Tada-Claude-Digital-Marketing-Report.md`, built on the free hybrid
 AI Agent (`../AI Agent/agent.py`). Zero monthly cost, pure stdlib —
 same backends (local Ollama / Groq / Gemini), same named-agent system,
-plus marketing tools and Tada brand assets.
+plus marketing tools and TADA brand assets.
 
 ## Quick start
 
@@ -25,7 +25,7 @@ Backends auto-select exactly like the AI Agent (`GROQ_API_KEY` → groq,
 |---|---|---|
 | `@scout` | W1/W5: competitor promo + app-review intelligence | `python3 marketing.py @scout "Weekly sweep: Grab and LINE MAN promos + review pain points. Save the brief."` |
 | `@copy` | §2.1: bilingual on-voice content production | `python3 marketing.py @copy "3 Facebook ad variations targeting Bangkok office workers 25-40, in Thai"` |
-| `@planner` | W2: monthly content calendar | `python3 marketing.py @planner "Build the July 2026 calendar, theme: rainy season = let Tada drive"` |
+| `@planner` | W2: monthly content calendar | `python3 marketing.py @planner "Build the July 2026 calendar, theme: rainy season = let TADA drive"` |
 | `@analyst` | W3: ad performance auto-report | `python3 marketing.py @analyst "Analyze sample_ads.csv week-over-week and recommend budget moves"` |
 
 ## Tools added on top of the base agent

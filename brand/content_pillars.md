@@ -1,4 +1,4 @@
-# Content Pillars & Platform Playbook — Tada Thailand
+# Content Pillars & Platform Playbook — TADA Thailand
 
 ## Platform priorities
 | Platform | Use case | Content type | Cadence |
