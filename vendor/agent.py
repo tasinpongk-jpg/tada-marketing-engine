@@ -204,6 +204,13 @@ try:
 except ImportError:
     pass
 
+# Persistent memory: client notebook + filings archive (SQLite, local)
+try:
+    import memory_tools
+    TOOLS.update(memory_tools.TOOLS)
+except ImportError:
+    pass
+
 
 def tool_specs():
     specs = []
