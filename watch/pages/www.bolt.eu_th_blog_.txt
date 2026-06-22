@@ -1,0 +1,16 @@
+Affordable work rides, without the paperwork
+Bolt has launched the Urban Fund, a social impact programme designed to accelerate the societal benefits of shared mobility worldwide. The programme will support charitable third-sector partnerships t
+Bolt launches the Urban Fund to advance shared mobility’s social impact
+Bolt, Pony.ai and Stellantis to launch autonomous mobility testing program in Luxembourg
+Global Bolt | Latest News &amp; Stories | Bolt Blog
+IOM Malta and Bolt Urban Fund support couriers and drivers
+Introducing Bolt Send, a convenient package delivery service. It’s perfect for surprising a loved one with a gift, returning something a friend left behind, or ensuring an item gets where
+Meet Bolt Send: your fast package delivery service
+SUT Lab launches Asunción transport accessibility study
+Seeing the bigger picture with event storming
+Stories, solutions &amp; updates from the team at Bolt.
+The Ride-hailing Economy Report combines insights from our ongoing conversations with drivers and one of the largest driver surveys ever conducted, gathering input from 40,000 drivers across 25 countr
+The program will focus on validating the safety, performance and regulatory readiness of Pony.ai’s seventh-generation (Gen-7) autonomous vehicles in Luxembourg’s traffic environment, supported by the 
+This article was written by Ammar Chalifah, Senior Finance Data Engineer at Bolt.
+Understanding the domain through event-storming sessions is one of the best ways to define your system’s future vision. In this article, I’ll share our experience with this method at Bolt.
+Understanding the ride-hailing economy: insights from 40,000+ drivers
