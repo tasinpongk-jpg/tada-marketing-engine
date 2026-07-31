@@ -1,0 +1,56 @@
+&#8220;Digitalize Thailand.&#8221;
+(creating new, delightful user experiences).
+. It was a commitment to change the company’s DNA. The goal was to move beyond being a mobile-first platform and start embedding AI into every internal process and external service to &#8220;Superchar
+2015: Wongnai Beauty: Discover beauty salons and spas, along with users&#8217; reviews.
+2016: Wongnai x LINE MAN: Allow LINE MAN users to order food delivery through the Wongnai&#8217;s restaurant database.
+2017: Wongnai Cooking: Find and share food recipes.
+2018: Wongnai Travel: Explore attractions, book accommodations, and access reviews.
+After expanding into Ride-hailing, Merchant Digital Solutions, and Financial Services, LINE MAN Wongnai’s business grew beyond just food. This led to a bigger vision:
+All tech teams now use AI-powered coding tools (like Cursor) to increase development speed.
+As a National Champion, LINE MAN Wongnai is dedicated to &#8216;Help Thai people live better&#8217; through its accelerated expansion across the country. By consolidating tech talent and resources, th
+Between 2013 and 2014, Wongnai received Series A funding twice from Recruit Strategic Partners, a major corporate entity under Japan&#8217;s Recruit Holdings. This funding enabled Wongnai to make subs
+Beyond business, LINE MAN Wongnai deepened its commitment to sustainability and local impact. The “No Condiments” feature on LINE MAN, designed to reduce unnecessary plastic waste, aligned with Thai e
+Building End-to-end Food Ecosystem&nbsp;
+Copyright @2024 LINE MAN Wongnai All right reserved.
+During the year 2016, LINE MAN launched as the first on-demand O2O service from LINE Thailand. Developed in-house by a dedicated Thai team, it functioned as a consolidated subsidiary under LINE Thaila
+Established on 12th July 2010, Wongnai was founded by four classmates from Chulalongkorn University&#8217;s Faculty of Engineering: Yod Chinsupakul, Pattrawoot ‘Boy’ Suesatayasilp, Suparit ‘Boy’ Krity
+Following the merger, LINE MAN Wongnai accelerated its expansion efforts nationwide, becoming the fastest-growing on-demand platform in Thailand. By November 2021, its Food Delivery service had succes
+In 2012, Wongnai experienced a significant turnaround, becoming the fastest-growing Thai startup. With the increasing adoption of smartphones in Thailand, Wongnai gained widespread popularity among us
+In 2014, Wongnai embarked on an expansion of its business operations to provincial cities, including Chiang Mai, Khon Kaen, Korat, Chon Buri, Hua Hin, Hat Yai, and Phuket. Over the subsequent years, t
+In 2016, Wongnai secured Series B funding from Intouch through the Invent project. This funding round represented the largest investment in Wongnai and a significant milestone as it was the first time
+In 2018, Wongnai made an investment in FoodStory, a Thai POS Startup, to jointly develop Wongnai POS by FoodStory. This innovative restaurant management system is designed to connect restaupreneurs to
+In 2020, a significant event unfolded for Wongnai, as its long-standing collaboration with LINE MAN showcased a successful impact in the Thai market, particularly from the perspective of major investo
+In 2022, LINE MAN app surged in popularity, earning recognition as one of Thailand’s Top App in the Apple App Store Awards 2022. It also stood out as one of just six Thai-originated apps to crack the 
+In August 2023, LINE MAN Wongnai set out to make its ecosystem even stronger. Joining forces with LINE Thailand, they acquired Rabbit LINE Pay (RLP) shares from the former shareholders and rebranded i
+In August 2025, acquired JERA Cloud, a leading cloud and POS provider for beauty and wellness, marking the first Merchant Digital Solutions expansion beyond restaurants.&nbsp;
+In December 2024, LINE Pay Thailand opened a developer center in South Korea, tapping into the country’s rich tech talent to enhance its digital payment capabilities.
+In July 2023, LINE MAN Wongnai acquired FoodStory, a respected Thai startup specializing in restaurant POS systems. This move came after Wongnai and FoodStory had previously partnered together. The ac
+In May 2025, the vision was made official. LINE MAN Wongnai declared its transition into an
+In September 2022, LINE MAN Wongnai raised an impressive USD 265 million (approx. THB 9,700 million)  in a series-B funding round. The investment was led by GIC &#8211; Singapore&#8217;s sovereign wea
+In September 2024, LINE MAN Wongnai moved to its new headquarter office at One Bangkok. It was a step towards bringing all teams together as one, creating a collaborative environment to work toward a 
+In early 2025, our CEO Yod Chinsupakul spent time in the world’s major tech hubs, including Silicon Valley, China, Korea, and Japan. After speaking with hundreds of tech leaders and investors, the tak
+LINE MAN MART extended its reach, now covering all 77 provinces across Thailand.
+LINE MAN reached new heights in Food Delivery, achieving the highest number of orders, the fastest growth, and securing No.1 market share in daily transactions, as reported by Redseer in H1/2024.&nbsp
+LINE Pay saw rapid adoption, especially among LINE MAN users.&nbsp;
+Our Contact Center and Key Account Management teams use Generative AI to handle millions of customer interactions more efficiently.
+People, Local Businesses, and Riders
+Since 2019, Wongnai has been undergoing a transformation into an O2O (Online-to-Offline) Platform, and remains dedicated to becoming the ultimate &#8220;super-lifestyle platform&#8221; for the everyda
+The company’s three core businesses: On-Demand Services, Merchant Digital Solutions, and Financial Services, began to settle into their rightful places.
+The ecosystem expanded with LINE MAN RIDE, offering on-demand car, taxi, and motorcycle services.&nbsp;
+The first year of Wongnai was indeed challenging as it grappled with numerous obstacles. The number of restaurants in its database was still relatively small, and there were not many reviews from user
+The goal was to bring millions of Thai local businesses into the digital world, strengthen the country’s digital infrastructure, and make life easier for everyone.
+The synergy between LINE Pay and POS systems enabled businesses to benefit from seamless digital payments and offline transactions.
+Their shared vision is to become Thailand&#8217;s leading E-commerce platform for services, with a primary focus on creating a comprehensive end-to-end food ecosystem. LINE MAN Wongnai offers a wide r
+This strategy is built on three levels:
+To activate this shift company-wide, we launched a 5-week AI Hackathon. Over 100 employees from 12 diverse departments, including Customer Services, Legal, Accounting, Marketing, People, etc, joined t
+To lead this historic shift, we appointed our
+We aim to help Thai people live better, to empower all local businesses with our e-Commerce platform for services. Our platform will connect consumers, riders and local businesses and improve the dail
+We are dedicated to making a significant impact by helping people live better and building a strong digital infrastructure for the country.
+We have the expertise and autonomy to create
+We treat people with dignity and consideration
+We try harder and go the extra mile
+With multiple initiatives underway, AI is becoming a standard way of working across the organization. The impact is clear: fewer frictions, faster decisions, shorter wait times, lower costs, and more 
+With the Digitalize Thailand vision in motion, LINE MAN Wongnai is now stronger, more connected, and ready to turn this bold vision into reality.
+Wongnai POS and FoodStory fully merged, creating stronger restaurant management solutions.
+we connect them through our platforms and create better living for all.
+—among the first such roles in Thailand—to work alongside our C-suite in embedding AI into our core strategy. The role is supported by a team of over 30 AI specialists and data scientists. These speci
