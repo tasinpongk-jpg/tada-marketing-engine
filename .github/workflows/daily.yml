@@ -8,7 +8,8 @@ name: Daily Marketing Sweep
 #   3. publish.py deploys the dashboard worker with the fresh content
 #
 # Schedule: 01:00 UTC = 08:00 Bangkok, daily.
-# Secrets required: GROQ_API_KEY, CLOUDFLARE_API_TOKEN.
+# GROQ_API_KEY is required for the sweep. CLOUDFLARE_API_TOKEN is optional;
+# without it, reports are still committed and only deployment is skipped.
 
 on:
   schedule:
@@ -29,6 +30,8 @@ jobs:
   sweep:
     runs-on: ubuntu-latest
     timeout-minutes: 45   # free-tier rate-limit waits can stretch a sweep
+    env:
+      HAS_CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,9 +56,14 @@ jobs:
           git pull --rebase origin main && git push
 
       - name: Publish dashboard
+        if: env.HAS_CLOUDFLARE_TOKEN == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python3 publish.py
+
+      - name: Note skipped dashboard publish
+        if: env.HAS_CLOUDFLARE_TOKEN != 'true'
+        run: echo "::warning::CLOUDFLARE_API_TOKEN is not configured; reports were committed but dashboard deployment was skipped."
 
       - name: Email the brief (optional — skips when not configured)
         env:
