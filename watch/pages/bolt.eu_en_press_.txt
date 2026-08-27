@@ -15,3 +15,5 @@ The food you love, delivered fast!
 The latest news, updates, and insights from across Bolt.
 The program will focus on validating the safety, performance and regulatory readiness of Pony.ai’s seventh-generation (Gen-7) autonomous vehicles in Luxembourg’s traffic environment, supported by the 
 Welcome to our hub for Bolt brand guidelines and downloadable assets. You can use this site to familiarise yourself with our brand material and how to use it.
+Wheels4Wheels is a pilot project that uses data from shared scooters to improve accessibility information in digital maps.
+Wheels4Wheels: using scooter data to improve accessibility
