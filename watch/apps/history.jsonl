@@ -184,3 +184,7 @@
 {"date": "2026-09-09", "package_id": "ee.mtakso.client", "play_rating": 4.83, "play_reviews": 10739935, "ios_rating": 4.78172, "ios_version": "249.0"}
 {"date": "2026-09-09", "package_id": "com.linecorp.linemanth", "play_rating": 3.82, "play_reviews": 364952, "ios_rating": 4.85867, "ios_version": "16.20.1"}
 {"date": "2026-09-09", "package_id": "sinet.startup.inDriver", "play_rating": 4.77, "play_reviews": 15866831, "ios_rating": 4.87024, "ios_version": "5.183.0"}
+{"date": "2026-09-10", "package_id": "com.grabtaxi.passenger", "play_rating": 4.79, "play_reviews": 16675817, "ios_rating": 4.8712, "ios_version": "5.426.0"}
+{"date": "2026-09-10", "package_id": "com.linecorp.linemanth", "play_rating": 3.82, "play_reviews": 365176, "ios_rating": 4.8587, "ios_version": "16.20.1"}
+{"date": "2026-09-10", "package_id": "ee.mtakso.client", "play_rating": 4.83, "play_reviews": 10747033, "ios_rating": 4.78171, "ios_version": "249.0"}
+{"date": "2026-09-10", "package_id": "sinet.startup.inDriver", "play_rating": 4.78, "play_reviews": 15879961, "ios_rating": 4.87025, "ios_version": "5.183.0"}
