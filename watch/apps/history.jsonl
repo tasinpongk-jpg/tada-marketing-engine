@@ -232,3 +232,7 @@
 {"date": "2026-09-26", "package_id": "com.grabtaxi.passenger", "play_rating": 4.79, "play_reviews": 16718878, "ios_rating": 4.87101, "ios_version": "5.429.0"}
 {"date": "2026-09-26", "package_id": "com.linecorp.linemanth", "play_rating": 3.81, "play_reviews": 367701, "ios_rating": 4.85906, "ios_version": "16.21.0"}
 {"date": "2026-09-28", "package_id": "com.grabtaxi.passenger", "play_rating": 4.79, "play_reviews": 16724448, "ios_rating": 4.87091, "ios_version": "5.429.0"}
+{"date": "2026-09-29", "package_id": "com.grabtaxi.passenger", "play_rating": 4.79, "play_reviews": 16726804, "ios_rating": 4.87089, "ios_version": "5.429.0"}
+{"date": "2026-09-29", "package_id": "com.linecorp.linemanth", "play_rating": 3.81, "play_reviews": 368250, "ios_rating": 4.85906, "ios_version": "16.21.0"}
+{"date": "2026-09-29", "package_id": "com.boltapp", "play_rating": null, "play_reviews": null, "ios_rating": 0, "ios_version": "2.0.0"}
+{"date": "2026-09-29", "package_id": "sinet.startup.inDriver", "play_rating": 4.78, "play_reviews": 16085674, "ios_rating": 4.87036, "ios_version": "5.186.0"}
