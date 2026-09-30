@@ -1,9 +1,9 @@
 . This e-mail address responds only to media inquiries. For customer support, please visit support in app.
 Available for iOS and Android devices.
 Bolt aims to deploy at least 25,000 autonomous Lucid vehicles across major European cities, powered by NVIDIA Hyperion.
-Bolt becomes the first platform to bring ride-hailing through AI to EU, UK, Norway, Switzerland, Ukraine and Azerbaijan.
 Bolt has teamed up with Pony.ai, combining driverless technology with Bolt’s transport expertise to accelerate the rollout of robotaxi services across Europe.
-Bolt launches ride-hailing integration to ChatGPT
+Bolt partners with Klarna to bring a new payment option to riders
+Bolt partners with Klarna to give riders a flexible, seamless new way to pay for their rides directly in the app.
 Bolt, Pony.ai and Stellantis to launch autonomous mobility testing program in Luxembourg
 Bolt’s leadership team brings together bold thinkers, builders, and problem-solvers from around the world. With experience spanning technology, mobility, product, and people, they’re united by one mis
 Driving the future: Bolt’s partnership with Pony.ai brings autonomous mobility to Europe
